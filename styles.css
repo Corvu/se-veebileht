@@ -1,3 +1,22 @@
 body {
-    background-color: aquamarine;
+    background-color: orange;
+    background-image: url("img/fall-back.jpg");
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    font-family: Arial;
+}
+p {
+    font-family: Cambria;
+}
+div.transbox {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8   )
+}
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
 }
