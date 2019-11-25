@@ -1,0 +1,38 @@
+div.contact img {
+    width: 250px;
+    height: 250px;
+    border-radius: 200px; /* Радиус скругления */
+    border: 5px solid tomato; /* Параметры рамки */
+
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+div.contact h2 {
+	text-align: center;
+}
+
+div.contact h3 {
+	font-size: 25px;
+}
+
+div.contact p {
+	font-size: 20px;
+}
+
+
+
+
+
+#left {
+	float: left;
+	width: 300px;
+	height: 400px;
+}
+
+#right {
+	padding-top: 50px;
+	margin-left: 350px;
+	height: 350px;
+} 
