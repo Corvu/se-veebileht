@@ -1,22 +1,23 @@
 body {
-    background-color: orange;
-    background-image: url("img/fall-back.jpg");
+    background-color: lightseagreen;
+    background-image: url("img/iceland-back.jpg");
     background-size: 100%;
     padding: 20px;
 }
 
 h1 {
     text-align: center;
-    font-family: Arial;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 36px;
 }
 
 h2 {
     text-align: center;
-    font-family: Arial;
+    font-family: 'PT Sans', sans-serif;
 }
 
 p {
-    font-family: Cambria;
+    font-family: sans-serif;
 }
 
 div.transbox {
@@ -31,6 +32,13 @@ img.center {
     height: 300px;
     opacity: 0.5;
     transition: height 200ms, opacity 200ms;
+}
+
+canvas.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: double;
 }
 
 /*Welcoming images on main page*/
@@ -50,6 +58,13 @@ img.welcome:hover {
 div.welcome {
     height: 300px;
     text-align: center;
+    vertical-align: middle;
+}
+/*Helper is needed to align images vertically in the middle*/
+span.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 /*Navigation menu*/
@@ -59,6 +74,7 @@ ul.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 ul.menu li{
     display: inline;
@@ -67,7 +83,9 @@ ul.menu li{
 ul.menu li a{
     background-color: rgba(255, 255, 255, 0.9);
     padding: 8px;
+    color: black;
+    text-decoration: none;
 }
 ul.menu li a:hover {
-    background-color: tomato;
+    background-color: limegreen;
 }
