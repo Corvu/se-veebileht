@@ -86,6 +86,9 @@ ul.menu li a{
     color: black;
     text-decoration: none;
 }
+ul.menu li a.active{
+    background-color: rgba(150, 150, 150, 1);
+}
 ul.menu li a:hover {
     background-color: limegreen;
 }
