@@ -1,3 +1,4 @@
+// Canvas
 var canvas = document.getElementById("testCanvas");
 /** @type {CanvasRenderingContext2D}; */
 var ctx = canvas.getContext("2d");
@@ -36,4 +37,3 @@ canvas.addEventListener("mousemove", function(event) {
     ctx.fillStyle = "black";
     ctx.fillText("Main", 100, 100);
 }, false);
-

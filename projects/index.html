@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+    
     <head>
         <meta charset="UTF-8">
         <title>The Project - Projects</title>
@@ -10,17 +11,21 @@
     </head>
 
     <body>
+
         <div class="menu">
             <ul class="menu">
                 <li><a href="../index.html">Home</a>
-                <li><a href="projects/index.html" class="active">Projects</a>
+                <li><a href="index.html" class="active">Projects</a>
                 <li><a href="../blog/index.html">Blog</a>
                 <li><a href="../contacts/index.html">Contacts</a>
             </ul>
         </div>
         <br>
+
         <div class="transbox">
             <h1>Our completed projects:</h1>
+
+            <!-- Every row is an entry for one event with placeholder for year and description -->
             <div class="row">
                 <div class="column left">
                     <div class="year">
@@ -35,6 +40,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="column left">
                     <div class="year">
@@ -43,12 +49,31 @@
                 </div>
                 <div class="column right">
                     <div class="project">
-                        <img src="../img/screencap-this.JPG" alt="screenshot of our beautiful website">
+                        <div class="slideshow-container">
+                            <div class="slidesProj fade">
+                                <img src="../img/screencap-this.JPG" alt="screenshot of our beautiful website">
+                            </div>
+                            <div class="slidesProj fade">
+                                <img src="../img/screencap-projects.JPG" alt="screenshot of projects page">
+                            </div>
+                            <div class="slidesProj fade">
+                                <img src="../img/screencap-blog.JPG" alt="screenshot of projects page">
+                            </div>
+                            <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlide(1)">&#10095;</a>
+                        </div>
+                        <br>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
                         <br>
                         Our company website. The project started as a university project but turned into a real website.
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="column left">
                     <div class="year">
@@ -57,12 +82,15 @@
                 </div>
                 <div class="column right">
                     <div class="project">
-                        <img src="../img/crypto-logos.jpg" alt="cryptocurrency logos">
-                        <br>
                         Foundation of the company. Creation of smart contract technology for Computer Science Institute of the University of Tartu.
                     </div>
                 </div>
             </div>
+
         </div>
+
+        <!-- Load Javascript file in the end, because elements need to be rendered first -->
+        <script src="projects_scripts.js"></script>
+
     </body>
 </html>

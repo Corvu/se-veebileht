@@ -20,6 +20,11 @@ p {
     font-family: sans-serif;
 }
 
+.quote {
+    font-family: sans-serif;
+    font-style: italic;
+}
+
 div.transbox {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -60,6 +65,7 @@ div.welcome {
     text-align: center;
     vertical-align: middle;
 }
+
 /*Helper is needed to align images vertically in the middle*/
 span.helper {
     display: inline-block;
