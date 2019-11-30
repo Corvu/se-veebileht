@@ -25,13 +25,13 @@ div.contact p {
 
 
 
-#left {
+div.left {
 	float: left;
 	width: 300px;
 	min-height: 400px;
 }
 
-#right {
+div.right {
 	padding-top: 50px;
 	margin-left: 350px;
 	min-height: 350px;

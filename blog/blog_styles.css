@@ -19,6 +19,11 @@ article.post iframe {
     display: block;
 }
 
+iframe.youtube {
+	width: 560px;
+    height: 315px;
+}
+
 article.post img {
 	margin-right: auto;
     margin-left: auto;
