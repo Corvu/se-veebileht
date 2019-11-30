@@ -1,25 +1,34 @@
-div.post {
+article.post {
 	margin-right: auto;
     margin-left: auto;
 
 
 	border-radius: 40px;
-    border: 5px solid tomato;
+    border: 5px solid lightseagreen;
 
     width: 80%;
 
     padding: 20px;
+    padding-bottom: 40px;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-div.post iframe {
+article.post iframe {
 	margin-right: auto;
     margin-left: auto;
     display: block;
 }
 
+article.post img {
+	margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 500px;
+}
+
+
 p.time {
-	color: red;
+	color: lightseagreen;
 	text-align: right;
 	font-style: oblique;
 	font-size: 20px;
