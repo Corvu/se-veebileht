@@ -11,8 +11,7 @@ ctx.textAlign = "center";
 ctx.fillText("Main", 100, 100);
 
 var circLeft = canvas.offsetLeft,
-    circTop = canvas.offsetTop,
-    elements = [];
+    circTop = canvas.offsetTop;
 
 canvas.addEventListener("click", function(event) {
     var x = event.pageX - circLeft,
@@ -26,20 +25,15 @@ canvas.addEventListener("click", function(event) {
 canvas.addEventListener("mousemove", function(event) {
     var x = event.pageX - circLeft,
         y = event.pageY - circTop;
+    ctx.beginPath();
+    ctx.arc(100, 100, 50, 0, 2 * Math.PI);
     if ( Math.pow(100-x, 2)+Math.pow(100-y, 2) < 2500 ) {
-        ctx.beginPath();
-        ctx.arc(100, 100, 50, 0, 2 * Math.PI);
         ctx.fillStyle = "red";
-        ctx.fill();
-        ctx.fillStyle = "black";
-        ctx.fillText("Main", 100, 100);
     } else {
-        ctx.beginPath();
-        ctx.arc(100, 100, 50, 0, 2 * Math.PI);
         ctx.fillStyle = "blue";
-        ctx.fill();
-        ctx.fillStyle = "black";
-        ctx.fillText("Main", 100, 100);
     }
+    ctx.fill();
+    ctx.fillStyle = "black";
+    ctx.fillText("Main", 100, 100);
 }, false);
 
