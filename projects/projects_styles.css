@@ -69,14 +69,10 @@ img {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    width: auto;
     margin-top: -20px;
     padding: 20px;
     color: white;
-    font-weight: bold;
     font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 3px;
     background-color: grey;
 }
 
@@ -88,37 +84,37 @@ img {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 2px;
     background-color: rgb(110, 110, 110);
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 .dot:hover {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 2px;
     background-color: whitesmoke;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 1.2s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 1.2s;
 }
 
 @-webkit-keyframes fade {
-    from {opacity: .4}
+    from {opacity: .2}
     to {opacity: 1}
 }
   
 @keyframes fade {
-    from {opacity: .4}
+    from {opacity: .2}
     to {opacity: 1}
 }

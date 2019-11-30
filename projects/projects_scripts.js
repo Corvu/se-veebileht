@@ -1,3 +1,5 @@
+// This code was taken from https://www.w3schools.com/
+
 // Slideshow
 var slideIndex = 1;
 showSlides(slideIndex);
